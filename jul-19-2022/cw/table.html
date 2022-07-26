@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+  </head>
+  <body>
+    <table
+      border="1"
+      width="700"
+      height="auto"
+      align="center"
+      cellspacing="0"
+      cellpadding="10"
+    >
+      <thead>
+        <tr align="left">
+          <th>Sn</th>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Ananata Jalil</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Hero Alom</td>
+          <td>30</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <!-- table>tr*5>td*7>{$} -->
+    <table
+      border="1"
+      width="700"
+      align="center"
+      cellspacing="0"
+      cellpadding="10"
+    >
+      <!-- tr no 1 -->
+      <tr>
+        <td colspan="2" bgcolor="red"></td>
+        <!-- <td></td> -->
+        <td bgcolor="blue"></td>
+        <td rowspan="5" bgcolor="green"></td>
+        <td bgcolor="blue"></td>
+        <td colspan="2" bgcolor="red"></td>
+        <!-- <td></td> -->
+      </tr>
+      <!-- tr no 2 -->
+      <tr>
+        <td colspan="3" bgcolor="yellow"></td>
+        <!-- <td></td>
+        <td></td> -->
+        <!-- <td></td> -->
+        <td colspan="3" bgcolor="yellow"></td>
+        <!-- <td></td>
+        <td></td> -->
+      </tr>
+      <!-- tr no 3 -->
+      <tr>
+        <td rowspan="2" bgcolor="orange"></td>
+        <td rowspan="3" bgcolor="hotpink"></td>
+        <td bgcolor="cornflowerblue"></td>
+        <!-- <td></td> -->
+        <td bgcolor="cornflowerblue"></td>
+        <td rowspan="3" bgcolor="hotpink">
+          <table
+            border="1"
+            cellpadding="0"
+            cellspacing="0"
+            width="100%"
+            height="50"
+          >
+            <tr>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+            </tr>
+          </table>
+        </td>
+        <td rowspan="2" bgcolor="orange"></td>
+      </tr>
+      <!-- tr no 4 -->
+      <tr>
+        <!-- <td></td> -->
+        <!-- <td></td> -->
+        <td bgcolor="purple">
+          <font color="white"> kaka </font>
+        </td>
+        <!-- <td></td> -->
+        <td bgcolor="purple"></td>
+        <!-- <td></td> -->
+        <!-- <td></td> -->
+      </tr>
+      <!-- tr no 5 -->
+      <tr>
+        <td bgcolor="teal"></td>
+        <!-- <td></td> -->
+        <td bgcolor="teal"></td>
+        <!-- <td></td> -->
+        <td bgcolor="teal"></td>
+        <!-- <td></td> -->
+        <td bgcolor="teal"></td>
+      </tr>
+    </table>
+    <br />
+    <form action="">
+      <table
+        align="center"
+        width="700"
+        cellspacing="0"
+        cellpadding="10"
+        border="1"
+      >
+        <tr>
+          <td>
+            <table align="left" cellspacing="0" cellpadding="10" border="0">
+              <tr>
+                <td><label for="yname">Your Name</label></td>
+                <td>:</td>
+                <td>
+                  <input type="text" placeholder="Your Name" id="yname" />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="age">Your Age</label></td>
+                <td>:</td>
+                <td><input type="text" placeholder="Your Name" id="age" /></td>
+              </tr>
+              <tr>
+                <td><label for="mob">Movile</label></td>
+                <td>:</td>
+                <td><input type="text" placeholder="Mobile Number" /></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

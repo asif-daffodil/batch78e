@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Registration Form</title>
+  </head>
+  <body>
+    <div id="container" style="width:100%;">                                   
+        <div id="left" style="float:left; border:2px; width:20%;"> 
+        <p></p></div>                     
+            
+     <div id="left" style="float:left; border:2px solid black; width:50%;"> 
+            
+            <center style="border:2px solid black;">
+            <h1>Sign Up for an Account</h1>
+                <form action="">
+                      <label for="name">Name :</label>
+                      <input
+                        type="text"
+                        placeholder="Type Your Name Here"
+                        id="name"
+                        required
+                        maxlength="23"
+                        minlength="3"
+                      />
+                      <br /><br />
+                      <label for="email_id">Email :</label>
+                      <input type="email" placeholder="Insert Your Email Address" id="email_id" />
+                      <br /><br />
+                      <label for="phone">Phone  Number:</label>
+                      <input type="number" placeholder="Your Phone Number" id="phone" />
+                      <br /><br />
+                      <label for="dob">Birthday :</label>
+                      <input type="date" id="dob" />
+                      <br /><br />
+                      <label for="">Gender :</label>
+                      <input type="radio" name="gndr" />Male
+                      <input type="radio" name="gndr" />Female <br /><br />
+                      <label for="">Hobby :</label>
+                      <input type="checkbox" />Cycling
+                      <input type="checkbox" />Watching Movies
+                      <input type="checkbox" />Reading Books
+                      <br /><br />
+                      <label for="division">Division :</label>
+                      <select name="" id="division">
+                        <option value="">--SELECT DIVISION--</option>
+                        <option value="">Dhaka</option>
+                        <option value="">Mymensingh</option>
+                        <option value="">Sylhet</option>
+                        <option value="">Chittagong</option>
+                        <option value="">Barishal</option>
+                        <option value="">Khulna</option>
+                        <option value="">Rajshahi</option>
+                        <option value="">Rangpur</option>
+                      </select>
+                      <br /><br />
+                      <label for="info">Additional Information :</label><br />
+                      <textarea
+                        name=""
+                        id="info"
+                        cols="30"
+                        rows="5"
+                        placeholder="Your Comments"
+                      ></textarea>
+                      <br /><br />
+                      <label for="pass">Password :</label>
+                      <input type="password" placeholder="Enter a password" id="pass" />
+                      <br /><br />
+                      <input type="reset" value="Reset" />
+                      <input type="submit" value="Sign up" />
+                      <br /><br />
+                </form>
+            </center>
+            
+        </div>
+        
+        <div id="left" style="float:left; border:2px; width:20%;">
+        <p></p></div>                     
+      
+    </div>   
+    
+  </body>
+</html>
+
