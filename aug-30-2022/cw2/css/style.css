@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "jorina";
+  src: url("../fonts/Oswald/Oswald-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "sokhina";
+  src: url("../fonts/Atma/Atma-Regular.ttf");
+}
+
+.main {
+  font-family: "jorina";
+}
+
+.pain {
+  font-family: "sokhina";
+}

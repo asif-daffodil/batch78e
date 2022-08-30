@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: calc(100% - 40px);
+  margin: auto;
+  height: calc(100vh - 40px);
+  margin-top: 20px;
+  background: lightblue;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.pain {
+  width: 30%;
+  height: 30%;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

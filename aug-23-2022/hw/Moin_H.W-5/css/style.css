@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Pacifico&family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  margin-left: 400px;
+}
+
+.container {
+  width: 900px;
+  height: 500px;
+  background-color: blue;
+  clip-path: polygon(0 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.massi img {
+  width: 760px;
+  height: auto;
+}
+h1 {
+  color: #fff;
+  margin-left: 100px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+p {
+  color: #fff;
+  font-size: 16px;
+  margin-left: 100px;
+  margin-right: 120px;
+  margin-bottom: 40px;
+}
+button {
+  background-color: #e61c1c;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  margin-left: 100px;
+  padding: 10px 25px;
+  font-size: 20px;
+}

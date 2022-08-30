@@ -1,0 +1,21 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.rasel{
+   height: 150px;
+   background-color: #000000;
+    
+}
+.rasel2 {
+    height:150px;
+    background-color: #ff0000;
+     
+ }
+ .rasel3 {
+   height:150px;
+   background-color: #FFCC00;
+    
+}

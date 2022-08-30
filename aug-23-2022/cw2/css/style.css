@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background: url("../iamges/wall.jpg");
+  background-size: cover;
+}
+
+.main {
+  width: 600px;
+  height: 300px;
+  margin: auto;
+  border: 1px solid #000;
+  background: url("../iamges/giphy-2.gif");
+  position: relative;
+}
+
+.main::before {
+  content: "";
+  width: calc(50% - 12px);
+  height: calc(100% - 12px);
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 6px solid brown;
+  transition: 0.5s;
+}
+
+.main::after {
+  content: "";
+  width: calc(50% - 12px);
+  height: calc(100% - 12px);
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: 6px solid brown;
+  transition: 0.5s;
+}
+
+.main:hover::before {
+  left: -50%;
+}
+.main:hover::after {
+  right: -50%;
+}

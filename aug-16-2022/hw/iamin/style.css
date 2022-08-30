@@ -1,0 +1,35 @@
+h1 {
+  color: blue;
+}
+.abba {
+  width: 500px;
+  color: brown;
+  text-align: center;
+  text-decoration: underline;
+  letter-spacing: 2px;
+  word-spacing: 1px;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: arial;
+  text-shadow: 2px 3px 2px black;
+  border: 1px solid blue;
+  border-radius: 5px;
+  background: lightcyan;
+  border-width: 5px;
+  margin: 200px 100px;
+  padding: auto;
+  box-shadow: 15px 15px 15px black;
+}
+
+.dada {
+  width: 400px;
+  height: 400px;
+  background: blueviolet;
+  display: inline-block;
+}
+
+.dada {
+  width: 400px;
+  height: 400px;
+  background: blueviolet;
+}

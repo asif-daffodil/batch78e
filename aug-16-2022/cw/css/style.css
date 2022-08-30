@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ami,
+.tumi {
+  width: 400px;
+  height: 200px;
+  /* background: rgb(79, 13, 202); */
+  background: #0077b5;
+}
+
+.tumi {
+  background: #2853add5;
+  /* background: rgba(247, 2, 47, 0.7); */
+  margin: -30px 0 0 10px;
+}
+
+.apni {
+  width: 400px;
+  height: 200px;
+  background-image: url("../images/mohila.png");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: 100% 36px;
+  background-color: teal;
+  margin-top: 20px;
+  margin-left: 10px;
+  box-shadow: 0 0 10px #000 inset, 5px 5px 10px #000;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.tui {
+  width: 150px;
+  height: 80px;
+  background: linear-gradient(to top right, #000, #fff, #000);
+  display: flex;
+  clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+}
+
+.amra {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  background: radial-gradient(#fff, #000);
+  border-radius: 50%;
+}
+
+h3 {
+  font-style: italic;
+}
+
+h3::before {
+  content: "Eye ";
+}
+
+h3::after {
+  content: " Hospital";
+}
+
+p,
+h3,
+h2 {
+  color: #fff;
+}

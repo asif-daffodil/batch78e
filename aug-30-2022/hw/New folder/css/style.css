@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.window{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: url(../wal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.box{
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    border: 1px solid red;
+    background: url(../bg.gif);
+    position: relative;
+ 
+}
+.box::before{
+    content: "";
+    height:100%;
+    width: 50%;
+    background: rgba(0, 0, 0, .6);
+    position: absolute;
+    border: 5px solid green;
+    top: -5px;
+    bottom: 0px;
+    left: -8px;
+    transition:10s;
+}
+.box::after{
+    content: "";
+    height:100%;
+    width: 50%;
+    background: rgba(0, 0, 0, .6);
+    position: absolute;
+    border: 5px solid green;
+    top: -5px;
+    bottom: 0px;
+    right: -8px;
+    transition:10s;
+}
+.box:hover::before {
+    left: -50%;
+}
+.box:hover::after {
+    right: -50%;
+}
