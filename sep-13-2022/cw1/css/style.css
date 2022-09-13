@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.trn {
+  width: 200px;
+  height: 200px;
+  box-shadow: 10px 10px 10px #000;
+  border-radius: 6px;
+  /* transform: scale(80%); */
+  /* transform: scaleX(80%); */
+  /* transform: scaleY(80%); */
+  /* transform: translate(20px); */
+  /* transform: translate(20px, 20px); */
+  /* transform: translateX(20px); */
+  /* transform: rotate(45deg); */
+  /* transform: rotateZ(45deg); */
+  /* transform: rotateX(45deg); */
+  /* transform: rotateY(45deg); */
+  /* transform: skew(-5deg); */
+  /* transform: skewX(-5deg); */
+  /* transform: skewY(-5deg); */
+  /* animation-name: myAnim;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; */
+  animation: myAnim 2s infinite linear;
+}
+
+@media only screen and (max-width: 620px) {
+  .trn {
+    background: dodgerblue;
+  }
+}
+@media only screen and (min-width: 620px) and (max-width: 920px) {
+  .trn {
+    background: limegreen;
+  }
+}
+@media only screen and (min-width: 920px) {
+  .trn {
+    background: hotpink;
+  }
+}
+
+@keyframes myAnim {
+  0% {
+    transform: skew(-5deg) translate(50px, 50px) rotate(-10deg) scale(70%);
+  }
+  50% {
+    transform: skew(-25deg) translate(250px, 250px) rotate(-190deg) scale(110%);
+  }
+  100% {
+    transform: skew(-5deg) translate(50px, 50px) rotate(-370deg) scale(70%);
+  }
+}
