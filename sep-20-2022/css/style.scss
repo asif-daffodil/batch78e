@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// @import url("./style.min.css");
+
+$borderColor: #00f;
+
+@mixin commonThings($w, $h, $d: flex) {
+  width: $w;
+  height: $h;
+  margin: auto;
+  display: $d;
+  border: 1px solid $borderColor;
+}
+
+.dada {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  > .baba {
+    @include commonThings(500px, 500px);
+    > .ami {
+      @include commonThings(400px, 400px);
+      > .baccha {
+        @include commonThings(300px, 300px);
+        > .nati {
+          @include commonThings(200px, 200px);
+          position: relative;
+          &::before {
+            content: "";
+            @include commonThings(100px, 100px, block);
+            position: absolute;
+            left: calc(50% - 50px);
+            top: calc(50% - 50px);
+          }
+          &::after {
+            content: "";
+            @include commonThings(50px, 50px, block);
+            position: absolute;
+            left: calc(50% - 25px);
+            top: calc(50% - 25px);
+          }
+          &:hover {
+            background: cornflowerblue;
+            &::before {
+              background: coral;
+            }
+            &::after {
+              background: limegreen;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.aiAmi {
+  width: 200px;
+  height: 20px;
+  font-size: 22px;
+  background: #000;
+  color: #fff;
+}
+
+.sheiTumi {
+  @extend .aiAmi;
+  color: #ccc;
+}
