@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #929599, #dff1ff);
+}
+.container {
+  width: 700px;
+  height: 400px;
+  background-image: linear-gradient(
+    to right,
+    #0000ff 33%,
+    #fff 33% 66%,
+    #d60000 33%
+  );
+}
+.container:hover {
+  width: 700px;
+  height: 400px;
+  background-image: linear-gradient(
+    to right,
+    #008000 33%,
+    #fff 33% 66%,
+    #d60000 33%
+  );
+}

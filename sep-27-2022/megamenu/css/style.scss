@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial;
+}
+
+body {
+  background: #ccc;
+}
+
+nav {
+  background: #000;
+  display: flex;
+  padding: 10px 40px;
+  position: relative;
+  > figure {
+    > img {
+      max-height: 50px;
+    }
+  }
+  > ul {
+    width: max-content;
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    > li {
+      width: 100%;
+      > a {
+        text-decoration: none;
+        color: #fff;
+        line-height: 50px;
+        display: block;
+        padding: 0px 20px;
+        position: relative;
+        font-size: 18px;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: -14px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 0%;
+          height: 5px;
+          background: #f00;
+          transition: 0.5s;
+        }
+      }
+
+      &:hover {
+        > a {
+          &::before {
+            width: 100%;
+          }
+        }
+        > div {
+          display: flex;
+        }
+      }
+      > div {
+        width: 100vw;
+        display: none;
+        justify-content: flex-end;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 20px;
+        background-image: url("../images/top-menu-banner.jpg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-color: #fff;
+        > ul {
+          list-style: none;
+          margin-right: 40px;
+          &:not(&:last-child) {
+            border-right: 1px solid #000;
+            padding-right: 40px;
+          }
+          > li {
+            a {
+              text-decoration: none;
+              color: #000;
+              font-size: 14px;
+              transition: 0.5s;
+            }
+            &:first-child {
+              > a {
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 14px;
+                text-decoration: underline;
+              }
+            }
+            &:not(&:first-child) {
+              &:hover {
+                > a {
+                  color: dodgerblue;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
