@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.div1 {
+  width: 600px;
+  padding: 20px;
+  margin: auto;
+  border: 1px solid #000;
+  border-radius: 8px;
+  > button {
+    background: red;
+    color: #fff;
+  }
+}
+
+.div2 {
+  color: #22f;
+}
+
+#kamal {
+  width: 600px;
+  margin: 20px auto;
+  display: flex;
+  > div {
+    width: 100%;
+    border: 1px solid #000;
+    margin: 8px;
+    padding: 5px;
+  }
+}
+
+#dhamal {
+  width: 150px;
+  background: #000;
+  padding: 8px;
+  margin: 20px auto;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+#jogfol {
+  width: 600px;
+  padding: 20px;
+  background: #bbb;
+  margin: 20px auto;
+  text-align: center;
+}
