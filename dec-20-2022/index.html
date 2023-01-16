@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="w-full h-screen flex justify-center items-center flex-col">
+      <div
+        class="p-4 uppercase bg-red-900 text-white text-4xl font-black tracking-wide rounded-lg shadow shadow-black"
+        id="bd"
+      >
+        Bangladesh
+      </div>
+      <button
+        class="border border-red-900 py-2 px-4 rounded-lg text-red-900 mt-4 hover:bg-red-900 hover:text-white shadow shadow-black"
+        id="dhk"
+      >
+        Dhaka
+      </button>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
+      integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $("#dhk").on("click", () => {
+        $("#bd").toggle(500);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#bangladesh {
+  position: relative;
+  top: 150px;
+  width: 600px;
+  height: 400px;
+  background: green;
+  margin: auto;
+  display: flex;
+  box-shadow: 0 0 10px #000;
+  > #red {
+    width: 125px;
+    height: 125px;
+    background: red;
+    margin: auto;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    box-shadow: 0 0 10px #000;
+    > #bd {
+      margin: auto;
+      display: flex;
+      margin: auto;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./node_modules/jquery-ui/external/" />
+    <link rel="stylesheet" href="./node_modules/chosen-js/chosen.min.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/jquery-ui/themes/base/all.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row min-vh-100 d-flex">
+        <div class="col-md-5 border rounded p-4 m-auto">
+          <form action="">
+            <div class="mb-3">
+              <select
+                data-placeholder="Choose a City..."
+                multiple
+                class="chosen-select form-control"
+              >
+                <option>Dhaka</option>
+                <option>Rajshahi</option>
+                <option>Khulna</option>
+                <option>Rongpur</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                id="datepicker"
+                class="form-control"
+                placeholder="Date of Birth"
+              />
+            </div>
+            <div class="ui-widget mb-3">
+              <input
+                id="tags"
+                placeholder="Programming Language"
+                class="form-control"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./node_modules/chosen-js/chosen.jquery.min.js"></script>
+    <script>
+      $(".chosen-select").chosen({ disable_search_threshold: 10 });
+      $(function () {
+        $("#datepicker").datepicker();
+      });
+      $(function () {
+        var availableTags = [
+          "ActionScript",
+          "AppleScript",
+          "Asp",
+          "BASIC",
+          "C",
+          "C++",
+          "Clojure",
+          "COBOL",
+          "ColdFusion",
+          "Erlang",
+          "Fortran",
+          "Groovy",
+          "Haskell",
+          "Java",
+          "JavaScript",
+          "Lisp",
+          "Perl",
+          "PHP",
+          "Python",
+          "Ruby",
+          "Scala",
+          "Scheme",
+        ];
+        $("#tags").autocomplete({
+          source: availableTags,
+        });
+      });
+    </script>
+    <script src="./node_modules/jquery-ui/dist/jquery-ui.min.js"></script>
+  </body>
+</html>
